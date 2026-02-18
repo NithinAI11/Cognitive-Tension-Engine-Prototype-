@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: cte_mongo
+    # FIXED: Internal port must be 27017 for standard mongo image
+    # Host:27029 (Your setting) -> Container:27017 (Required by Image)
+    ports:
+      - "27029:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+  redis:
+    image: redis:alpine
+    container_name: cte_redis
+    ports:
+      - "6399:6379"
+    restart: always
+
+  qdrant:
+    image: qdrant/qdrant
+    container_name: cte_qdrant
+    ports:
+      - "6343:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: always
+
+volumes:
+  mongo_data:
+  qdrant_data:

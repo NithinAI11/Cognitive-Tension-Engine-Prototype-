@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+motor
+redis
+qdrant-client
+google-generativeai
+langgraph
+langchain-core
+python-dotenv
+httpx
+pydantic
+pydantic-settings
+streamlit
+watchdog
