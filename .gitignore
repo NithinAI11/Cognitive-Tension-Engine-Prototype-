@@ -1,0 +1,106 @@
+# =========================
+# 🔐 Secrets & Env Files
+# =========================
+.env
+.env.*
+**/.env
+**/.env.*
+
+# =========================
+# 🐍 Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.cache/
+.coverage
+htmlcov/
+
+# =========================
+# 🧪 Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# 📦 Node / Frontend
+# =========================
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+
+# =========================
+# 🐳 Docker
+# =========================
+*.log
+docker-compose.override.yml
+*.pid
+
+# =========================
+# 🗄️ Databases / Local Volumes
+# =========================
+data/
+db_data/
+mongo_data/
+redis_data/
+qdrant_data/
+
+# =========================
+# 🧠 ML / AI Artifacts
+# =========================
+models/
+checkpoints/
+wandb/
+mlruns/
+tensorboard/
+*.ckpt
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# =========================
+# 🧾 Logs & Debug
+# =========================
+logs/
+*.log
+debug.log
+
+# =========================
+# 🖥️ OS / Editor Noise
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# 🗃️ Project Snapshots / Reports (optional)
+# =========================
+project_snapshot.txt
+Ver_*.html
+full_snapshot.py
+
+# =========================
+# 🧪 Test / Temp
+# =========================
+tmp/
+temp/
+*.tmp
